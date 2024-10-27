@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width={%}, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for record in res %}
+    <h3>
+        {{ record.id }} - {{ record.username }} - {{ record.first_name }} - {{ record.last_name }}
+    </h3>
+    {% endfor %}
+</body>
+</html>

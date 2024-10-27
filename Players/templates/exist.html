@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Search</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="name">userame:</label>
+        <input type="text" id="name" name="powerstar" required>
+        <br>
+        <label for="password">password:</label>
+        <input type="password" id="password" name="superstar" required>
+        <br>
+        <button type="submit">Search</button>
+    </form>
+    {% if res %}
+        <h1>present</h1>
+    {% else %}
+        <h1>not present</h1>
+    {% endif %}
+</body>
+</html>
