@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Note List</title>
+</head>
+<body>
+    <h1>Note List</h1>
+    <form method="post" action="">
+        <input type="text" name="name" placeholder="Notes" required>
+        <button type="submit">Search</button>
+    <ul>
+        {% for note in notes %}
+            <li>
+                <strong>{{ note.title }}</strong>
+                <p>{{ note.content }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
